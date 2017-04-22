@@ -1,4 +1,4 @@
-## CM for Moto Z
+## Tree for Moto Z
 Device Tree for Moto Z (Griffin)
 ===========================================
 
@@ -11,12 +11,14 @@ CPU     | Quad-core (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)
 Chipset | Qualcomm MSM8996 Snapdragon 820
 GPU     | Adreno 530
 Memory  | 4 GB RAM
-Shipped Android Version | 6.0.1
+Shipped Android Version | 7.0.0
 Storage | 32/64 GB
 MicroSD | Up to 256 GB
 Battery | Li-Ion 2600mAh battery
 Display | 1440 x 2560 pixels (~535 ppi pixel density)
 Camera  | 13 MP, f/1.8, laser autofocus, OIS, dual-LED (dual tone) flash
+
+This tree don't need the cmsdk to be compiled
 
 Copyright 2016 - The CyanogenMod Project.
 

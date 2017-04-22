@@ -74,7 +74,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
+    SnapdragonCamera \
     libbson \
     libshim_camera \
     libcamera_shim
@@ -123,10 +123,6 @@ PRODUCT_PACKAGES += \
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     fingerprintd
-
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -286,13 +282,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dsi_config.xml:system/etc/data/dsi_config.xml \
     $(LOCAL_PATH)/configs/netmgr_config.xml:system/etc/data/netmgr_config.xml
 
-# CMActions
-PRODUCT_PACKAGES += \
-    CMActions
-
 # DRM
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite
+
+#CMActions
+PRODUCT_PACKAGES += \
+    CMActions
 
 # Ebtables
 PRODUCT_PACKAGES += \

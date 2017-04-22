@@ -1,0 +1,3 @@
+add_lunch_combo discovery_griffin-user
+add_lunch_combo discovery_griffin-userdebug
+add_lunch_combo discovery_griffin-eng

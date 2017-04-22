@@ -101,7 +101,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 TARGET_CUSTOM_DTBTOOL := dtbTool_custom
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_CONFIG := griffin_defconfig
+TARGET_KERNEL_CONFIG := tunder_griffin_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8996
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
