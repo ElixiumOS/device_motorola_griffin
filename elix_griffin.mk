@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 ElixiumOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,27 +21,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # for specific
 $(call inherit-product, vendor/motorola/griffin/griffin-vendor.mk)
 $(call inherit-product, device/motorola/griffin/device.mk)
-
-# Inherit some common Discovery stuff.
-$(call inherit-product, vendor/discovery/common.mk)
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Time Zone data for recovery
 PRODUCT_COPY_FILES += \
     bionic/libc/zoneinfo/tzdata:root/system/usr/share/zoneinfo/tzdata
 
-DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
+# Inherit for ElixiumOS products file.
+$(call inherit-product, vendor/elixium/products.mk)
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1440
+# Some values for wallpaper and bootanimation
+BOOTANIMATION_1000P := true
+WALLPAPER_QHD := true
+
+DEVICE_PACKAGE_OVERLAYS += device/motorola/griffin/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-PRODUCT_NAME := discovery_griffin
+PRODUCT_NAME := elix_griffin
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := griffin
 PRODUCT_MODEL := Moto Z

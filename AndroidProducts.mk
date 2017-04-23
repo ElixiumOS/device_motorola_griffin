@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/discovery_griffin.mk \
+    $(LOCAL_DIR)/elix_griffin.mk \
